@@ -36,6 +36,8 @@ final_deploy/
 │   ├── digital_twin.js         # Digital twin simulation logic
 │   └── ai_prediction.js        # AI prediction logic
 └── images/                     # Visual assets
+```
+
 
 ## 🚀 Getting Started
 
