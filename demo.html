@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive demonstrations of WaterGuard's blockchain, digital twin, and AI technologies for water governance">
+    <meta name="keywords" content="water governance, interactive demo, blockchain, digital twin, AI, visualization">
+    <meta name="author" content="WaterGuard Team">
+    <title>Interactive Demo - WaterGuard</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-water me-2"></i>WaterGuard
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="background.html">Research Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="framework.html">Research Framework</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">Technology Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="applications.html">Application Scenarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="demo.html">Interactive Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Title -->
+    <header class="bg-primary text-white text-center py-5 mt-5">
+        <div class="container">
+            <h1 class="display-4">WaterGuard Interactive Demo</h1>
+            <p class="lead">Experience the key features of our system through interactive demonstrations</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mt-0 mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Interactive Demonstrations</h2>
+                    <hr class="divider my-4">
+                    <p>
+                        These interactive demonstrations showcase the core capabilities of the WaterGuard system, 
+                        including blockchain data flow, water quality monitoring, and emergency response planning.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Water Quality Monitoring Dashboard -->
+            <div class="row mb-5">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-heading">Water Quality Monitoring Dashboard</h2>
+                    <hr class="divider my-4">
+                    <p class="mb-4">This demonstration showcases how the system monitors and analyzes water quality data in real time, and uses AI algorithms to predict future water quality trends.</p>
+                </div>
+
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <canvas id="waterQualityChart"></canvas>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Current Water Quality Status</h5>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>pH Value:</span>
+                                                <span id="phValue">7.2</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>COD:</span>
+                                                <span id="codValue">35 mg/L</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Tritium:</span>
+                                                <span id="tritiumValue">12 Bq/L</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>Overall Status:</span>
+                                                <span id="overallStatus" class="badge bg-success">Normal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Prediction</h5>
+                                <p>Forecast for the next 72 hours:</p>
+                                <div id="predictionStatus" class="alert alert-info">
+                                    The system predicts that water quality parameters will remain within normal range, with no abnormal trends.
+                                </div>
+                                <button id="runPredictionButton" class="btn btn-primary btn-sm w-100">Run New Prediction</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Emergency Response Simulator -->
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-heading">Emergency Response Simulator</h2>
+                    <hr class="divider my-4">
+                    <p class="mb-4">This demonstration shows how the system generates optimal emergency response plans in extreme weather or unexpected events.</p>
+                </div>
+                
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Event Type</h5>
+                                    <select id="event-type" class="form-select mb-3">
+                                        <option>Extreme Rainfall</option>
+                                        <option>Flooding</option>
+                                        <option>Drought</option>
+                                        <option>Contamination</option>
+                                        <option>Infrastructure Failure</option>
+                                    </select>
+                                    
+                                    <h5>Event Severity</h5>
+                                    <select id="event-severity" class="form-select mb-3">
+                                        <option>Minor</option>
+                                        <option>Moderate</option>
+                                        <option>Severe</option>
+                                        <option>Critical</option>
+                                    </select>
+                                    
+                                    <h5>Affected Area</h5>
+                                    <select id="affected-area" class="form-select mb-3">
+                                        <option>South District</option>
+                                        <option>North District</option>
+                                        <option>East District</option>
+                                        <option>West District</option>
+                                        <option>Central District</option>
+                                    </select>
+                                    
+                                    <button id="generate-plan" class="btn btn-primary w-100">Generate Response Plan</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Emergency Response Plan</h5>
+                                            <div id="response-plan" class="p-3 bg-light rounded">
+                                                <p class="text-center text-muted">Please select event type and parameters, then click "Generate Response Plan".</p>
+                                            </div>
+                                            <div id="response-plan-status" class="alert alert-info mt-3" role="alert" style="display: none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blockchain Data Flow -->
+            <div class="row mt-5 mb-5">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-heading">Blockchain Data Flow</h2>
+                    <hr class="divider my-4">
+                </div>
+                
+                <div class="col-lg-10 mx-auto">
+                    <div class="demo-card">
+                        <div class="demo-content">
+                            <div class="row">
+                                <div class="col-md-7 mb-4">
+                                    <div class="demo-description">
+                                        <p>
+                                            This demonstration shows how data flows through the blockchain-based system, from data sources to applications.
+                                            The blockchain ensures data integrity, traceability, and security throughout the entire process.
+                                        </p>
+                                        <h5>Key Components</h5>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="feature-list">
+                                                    <li><strong>Data Sources:</strong> Water quality sensors, flow meters, water level sensors</li>
+                                                    <li><strong>Data Validation:</strong> Integrity checks, source verification, consensus</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="feature-list">
+                                                    <li><strong>Blockchain Storage:</strong> Immutable blocks with verified water data</li>
+                                                    <li><strong>Data Applications:</strong> Monitoring, alerts, decision support</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mb-4">
+                                    <div class="demo-controls h-100">
+                                        <h5>Transaction Ledger</h5>
+                                        <div class="table-responsive">
+                                            <table class="table table-sm table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Time</th>
+                                                        <th>Data Type</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>08:15:22</td>
+                                                        <td>Water Quality</td>
+                                                        <td><span class="badge bg-success">Verified</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:10:15</td>
+                                                        <td>Flow Rate</td>
+                                                        <td><span class="badge bg-success">Verified</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:05:47</td>
+                                                        <td>Pressure</td>
+                                                        <td><span class="badge bg-success">Verified</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:00:03</td>
+                                                        <td>Water Level</td>
+                                                        <td><span class="badge bg-success">Verified</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center mt-3">
+                                            <a href="https://hydro-trust-nexus.lovable.app/blockchain" target="_blank" class="btn btn-primary btn-sm" id="view-ledger">View Full Ledger</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <div class="card shadow cta-card">
+                        <div class="card-body">
+                            <h2 class="mb-4">Experience the Full System</h2>
+                            <p class="mb-4">
+                                These demonstrations provide a glimpse into the capabilities of the WaterGuard system.
+                                For a more comprehensive experience, visit the Hydro Trust Nexus platform, which implements
+                                many of these features in a fully functional environment.
+                            </p>
+                            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                <a href="https://hydro-trust-nexus.lovable.app/" target="_blank" class="btn btn-primary btn-lg px-4">
+                                    <i class="fas fa-external-link-alt me-2"></i>Visit Hydro Trust Nexus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 WaterGuard. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/digital_twin.js"></script>
+</body>
+</html>

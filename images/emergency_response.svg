@@ -1,0 +1,62 @@
+/* This is an SVG file for the Emergency Response Simulator */
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#ffffff" rx="10" ry="10"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#0077b6">Emergency Response Simulator</text>
+    <line x1="250" y1="50" x2="550" y2="50" stroke="#0077b6" stroke-width="2"/>
+    
+    <!-- Description -->
+    <text x="400" y="80" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">This demonstration shows how the system generates optimal emergency response plans</text>
+    <text x="400" y="100" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">during extreme weather events or sudden water quality incidents.</text>
+    
+    <!-- Left Panel - Event Parameters -->
+    <rect x="50" y="130" width="350" height="320" fill="#f8f9fa" stroke="#0077b6" stroke-width="1" rx="5" ry="5"/>
+    <text x="225" y="160" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#0077b6">Event Type</text>
+    
+    <!-- Event Type Dropdown -->
+    <rect x="80" y="180" width="290" height="40" fill="#ffffff" stroke="#0077b6" stroke-width="1" rx="5" ry="5"/>
+    <text x="100" y="205" font-family="Arial" font-size="14" fill="#0077b6">Extreme Rainfall</text>
+    <polygon points="350,190 360,200 350,210" fill="#0077b6"/>
+    
+    <!-- Event Severity -->
+    <text x="225" y="250" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#0077b6">Event Severity</text>
+    <rect x="80" y="270" width="290" height="40" fill="#ffffff" stroke="#0077b6" stroke-width="1" rx="5" ry="5"/>
+    <text x="100" y="295" font-family="Arial" font-size="14" fill="#0077b6">Minor</text>
+    <polygon points="350,280 360,290 350,300" fill="#0077b6"/>
+    
+    <!-- Affected Area -->
+    <text x="225" y="340" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#0077b6">Affected Area</text>
+    <rect x="80" y="360" width="290" height="40" fill="#ffffff" stroke="#0077b6" stroke-width="1" rx="5" ry="5"/>
+    <text x="100" y="385" font-family="Arial" font-size="14" fill="#0077b6">North District</text>
+    <polygon points="350,370 360,380 350,390" fill="#0077b6"/>
+    
+    <!-- Generate Button -->
+    <rect x="80" y="420" width="290" height="40" fill="#0077b6" stroke="none" rx="5" ry="5"/>
+    <text x="225" y="445" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Generate Response Plan</text>
+    
+    <!-- Right Panel - Response Plan -->
+    <rect x="430" y="130" width="320" height="320" fill="#f8f9fa" stroke="#0077b6" stroke-width="1" rx="5" ry="5"/>
+    <text x="590" y="160" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#0077b6">Emergency Response Plan</text>
+    
+    <!-- Response Plan Content -->
+    <rect x="450" y="180" width="280" height="250" fill="#ffffff" stroke="#0077b6" stroke-width="1" rx="5" ry="5"/>
+    
+    <!-- Response Plan Items -->
+    <text x="470" y="210" font-family="Arial" font-size="14" font-weight="bold" fill="#0077b6">1. Alert Notification</text>
+    <text x="490" y="230" font-family="Arial" font-size="12" fill="#0077b6">- Send alerts to residents in affected area</text>
+    <text x="490" y="250" font-family="Arial" font-size="12" fill="#0077b6">- Notify emergency response teams</text>
+    
+    <text x="470" y="280" font-family="Arial" font-size="14" font-weight="bold" fill="#0077b6">2. Resource Deployment</text>
+    <text x="490" y="300" font-family="Arial" font-size="12" fill="#0077b6">- Deploy 2 pumping units to North District</text>
+    <text x="490" y="320" font-family="Arial" font-size="12" fill="#0077b6">- Prepare sandbags at central depot</text>
+    
+    <text x="470" y="350" font-family="Arial" font-size="14" font-weight="bold" fill="#0077b6">3. Infrastructure Adjustments</text>
+    <text x="490" y="370" font-family="Arial" font-size="12" fill="#0077b6">- Increase drainage capacity at stations N1, N3</text>
+    <text x="490" y="390" font-family="Arial" font-size="12" fill="#0077b6">- Monitor water levels at retention basins</text>
+    
+    <!-- Map Icon -->
+    <rect x="680" y="440" width="50" height="20" fill="#0077b6" stroke="none" rx="3" ry="3"/>
+    <text x="705" y="455" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">Map</text>
+</svg>

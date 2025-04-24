@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="100" viewBox="0 0 1000 100">
+  <defs>
+    <path id="wave" d="M 0,50 C 50,30 100,70 150,50 C 200,30 250,70 300,50 C 350,30 400,70 450,50 C 500,30 550,70 600,50 C 650,30 700,70 750,50 C 800,30 850,70 900,50 C 950,30 1000,70 1050,50 L 1050,100 L 0,100 Z" />
+  </defs>
+  <use xlink:href="#wave" fill="#0077b6" opacity="0.7" />
+</svg>

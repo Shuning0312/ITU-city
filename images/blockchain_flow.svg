@@ -1,0 +1,96 @@
+/* 这是一个SVG文件，用于模拟区块链数据流程图 */
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#ffffff" rx="10" ry="10"/>
+    
+    <!-- 标题 -->
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#0077b6">区块链数据流</text>
+    <line x1="250" y1="50" x2="550" y2="50" stroke="#0077b6" stroke-width="2"/>
+    
+    <!-- 数据源 -->
+    <rect x="50" y="100" width="120" height="60" rx="5" ry="5" fill="#caf0f8" stroke="#0077b6" stroke-width="2"/>
+    <text x="110" y="135" font-family="Arial" font-size="16" text-anchor="middle" fill="#0077b6">数据源</text>
+    
+    <!-- 传感器 -->
+    <rect x="50" y="200" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="110" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">水质传感器</text>
+    
+    <rect x="50" y="250" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="110" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">流量计</text>
+    
+    <rect x="50" y="300" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="110" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">水位计</text>
+    
+    <!-- 数据验证 -->
+    <rect x="250" y="100" width="120" height="60" rx="5" ry="5" fill="#90e0ef" stroke="#0077b6" stroke-width="2"/>
+    <text x="310" y="135" font-family="Arial" font-size="16" text-anchor="middle" fill="#0077b6">数据验证</text>
+    
+    <!-- 验证步骤 -->
+    <rect x="250" y="200" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="310" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">数据完整性检查</text>
+    
+    <rect x="250" y="250" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="310" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">来源验证</text>
+    
+    <rect x="250" y="300" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="310" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">多方共识</text>
+    
+    <!-- 区块链存储 -->
+    <rect x="450" y="100" width="120" height="60" rx="5" ry="5" fill="#48cae4" stroke="#0077b6" stroke-width="2"/>
+    <text x="510" y="135" font-family="Arial" font-size="16" text-anchor="middle" fill="#0077b6">区块链存储</text>
+    
+    <!-- 区块 -->
+    <rect x="450" y="200" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="510" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">区块 #1</text>
+    
+    <rect x="450" y="250" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="510" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">区块 #2</text>
+    
+    <rect x="450" y="300" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="510" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">区块 #3</text>
+    
+    <!-- 数据应用 -->
+    <rect x="650" y="100" width="120" height="60" rx="5" ry="5" fill="#00b4d8" stroke="#0077b6" stroke-width="2"/>
+    <text x="710" y="135" font-family="Arial" font-size="16" text-anchor="middle" fill="#ffffff">数据应用</text>
+    
+    <!-- 应用类型 -->
+    <rect x="650" y="200" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="710" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">水质监测</text>
+    
+    <rect x="650" y="250" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="710" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">预警系统</text>
+    
+    <rect x="650" y="300" width="120" height="40" rx="5" ry="5" fill="#ffffff" stroke="#0077b6" stroke-width="1"/>
+    <text x="710" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">决策支持</text>
+    
+    <!-- 连接箭头 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#0077b6"/>
+        </marker>
+    </defs>
+    
+    <!-- 主流程箭头 -->
+    <line x1="170" y1="130" x2="250" y2="130" stroke="#0077b6" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="370" y1="130" x2="450" y2="130" stroke="#0077b6" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="570" y1="130" x2="650" y2="130" stroke="#0077b6" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 数据流动动画 -->
+    <circle id="data-point-1" cx="200" cy="130" r="5" fill="#0077b6">
+        <animate attributeName="cx" from="170" to="250" dur="2s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle id="data-point-2" cx="400" cy="130" r="5" fill="#0077b6">
+        <animate attributeName="cx" from="370" to="450" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle id="data-point-3" cx="600" cy="130" r="5" fill="#0077b6">
+        <animate attributeName="cx" from="570" to="650" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- 底部说明 -->
+    <rect x="50" y="380" width="700" height="80" rx="5" ry="5" fill="#f8f9fa" stroke="#0077b6" stroke-width="1"/>
+    <text x="400" y="410" font-family="Arial" font-size="16" text-anchor="middle" fill="#0077b6">区块链数据流程说明</text>
+    <text x="400" y="440" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">数据从传感器采集后，经过验证步骤确保真实性和完整性，</text>
+    <text x="400" y="460" font-family="Arial" font-size="14" text-anchor="middle" fill="#0077b6">然后存储在区块链上，最终被各种应用程序使用。</text>
+</svg>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa" />
+    
+    <!-- Title -->
+    <text x="400" y="50" font-family="Roboto, Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#0077b6">Digital Twin Technology Architecture</text>
+    
+    <!-- Physical World -->
+    <rect x="100" y="100" width="600" height="60" rx="4" fill="#caf0f8" />
+    <text x="400" y="135" font-family="Roboto, Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#03045e">Physical World</text>
+    
+    <!-- Physical World Icons -->
+    <circle cx="200" cy="130" r="15" fill="#0077b6" />
+    <text x="200" y="135" font-family="Roboto, Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">P</text>
+    
+    <circle cx="300" cy="130" r="15" fill="#0077b6" />
+    <text x="300" y="135" font-family="Roboto, Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">B</text>
+    
+    <circle cx="400" cy="130" r="15" fill="#0077b6" />
+    <text x="400" y="135" font-family="Roboto, Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">V</text>
+    
+    <circle cx="500" cy="130" r="15" fill="#0077b6" />
+    <text x="500" y="135" font-family="Roboto, Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">T</text>
+    
+    <circle cx="600" cy="130" r="15" fill="#0077b6" />
+    <text x="600" y="135" font-family="Roboto, Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">S</text>
+    
+    <!-- Data Collection Layer -->
+    <rect x="100" y="180" width="600" height="60" rx="4" fill="#90e0ef" />
+    <text x="400" y="215" font-family="Roboto, Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#03045e">Data Collection Layer</text>
+    
+    <!-- Data Collection Icons -->
+    <rect x="150" y="200" width="80" height="20" rx="4" fill="#0077b6" />
+    <text x="190" y="215" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#ffffff">IoT Sensors</text>
+    
+    <rect x="250" y="200" width="80" height="20" rx="4" fill="#0077b6" />
+    <text x="290" y="215" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#ffffff">SCADA Systems</text>
+    
+    <rect x="350" y="200" width="80" height="20" rx="4" fill="#0077b6" />
+    <text x="390" y="215" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#ffffff">Video Monitoring</text>
+    
+    <rect x="450" y="200" width="80" height="20" rx="4" fill="#0077b6" />
+    <text x="490" y="215" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#ffffff">Historical Data</text>
+    
+    <rect x="550" y="200" width="80" height="20" rx="4" fill="#0077b6" />
+    <text x="590" y="215" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#ffffff">GIS Data</text>
+    
+    <!-- Connection Lines -->
+    <line x1="400" y1="160" x2="400" y2="180" stroke="#03045e" stroke-width="2" stroke-dasharray="5,5" />
+    
+    <!-- Digital Twin Model Layer -->
+    <rect x="100" y="260" width="600" height="80" rx="4" fill="#48cae4" />
+    <text x="400" y="290" font-family="Roboto, Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Digital Twin Model Layer</text>
+    <text x="400" y="320" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Geometric · Physical · Behavioral · Rule-based · Relational Models</text>
+    
+    <!-- Connection Lines -->
+    <line x1="400" y1="240" x2="400" y2="260" stroke="#03045e" stroke-width="2" stroke-dasharray="5,5" />
+    
+    <!-- Simulation Analysis Layer -->
+    <rect x="100" y="360" width="600" height="60" rx="4" fill="#00b4d8" />
+    <text x="400" y="395" font-family="Roboto, Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Simulation Analysis Layer</text>
+    
+    <!-- Simulation Analysis Icons -->
+    <rect x="150" y="380" width="80" height="20" rx="4" fill="#caf0f8" />
+    <text x="190" y="395" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#03045e">Hydraulic Simulation</text>
+    
+    <rect x="250" y="380" width="80" height="20" rx="4" fill="#caf0f8" />
+    <text x="290" y="395" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#03045e">Water Quality</text>
+    
+    <rect x="350" y="380" width="80" height="20" rx="4" fill="#caf0f8" />
+    <text x="390" y="395" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#03045e">Energy Analysis</text>
+    
+    <rect x="450" y="380" width="80" height="20" rx="4" fill="#caf0f8" />
+    <text x="490" y="395" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#03045e">Fault Prediction</text>
+    
+    <rect x="550" y="380" width="80" height="20" rx="4" fill="#caf0f8" />
+    <text x="590" y="395" font-family="Roboto, Arial" font-size="12" text-anchor="middle" fill="#03045e">Scenario Simulation</text>
+    
+    <!-- Connection Lines -->
+    <line x1="400" y1="340" x2="400" y2="360" stroke="#03045e" stroke-width="2" stroke-dasharray="5,5" />
+    
+    <!-- Visualization Interaction Layer -->
+    <rect x="100" y="440" width="600" height="40" rx="4" fill="#0077b6" />
+    <text x="400" y="465" font-family="Roboto, Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Visualization Interaction Layer</text>
+    
+    <!-- Connection Lines -->
+    <line x1="400" y1="420" x2="400" y2="440" stroke="#03045e" stroke-width="2" stroke-dasharray="5,5" />
+</svg>

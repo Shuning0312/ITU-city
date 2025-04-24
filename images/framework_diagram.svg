@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa" />
+    
+    <!-- Title -->
+    <text x="400" y="50" font-family="Roboto, Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#0077b6">Smart Water Governance System Research Framework</text>
+    
+    <!-- Three-Stage Evolution Framework -->
+    <rect x="100" y="100" width="600" height="80" rx="4" fill="#48cae4" />
+    <text x="400" y="145" font-family="Roboto, Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">Three-Stage Evolution Framework</text>
+    
+    <!-- Stage 1: Trusted Data Space -->
+    <rect x="100" y="200" width="180" height="200" rx="4" fill="#90e0ef" />
+    <text x="190" y="230" font-family="Roboto, Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#03045e">Trusted Data Space</text>
+    <text x="190" y="260" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#03045e">Based on Blockchain</text>
+    <text x="190" y="290" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#03045e">Building Multi-party</text>
+    <text x="190" y="320" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#03045e">Water Data Space</text>
+    <text x="190" y="350" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#03045e">Trusted Storage</text>
+    <text x="190" y="380" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#03045e">Transparent Sharing</text>
+    
+    <!-- Stage 2: Drainage Metaverse -->
+    <rect x="310" y="200" width="180" height="200" rx="4" fill="#00b4d8" />
+    <text x="400" y="230" font-family="Roboto, Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Drainage Metaverse</text>
+    <text x="400" y="260" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Digital Twin</text>
+    <text x="400" y="290" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Technology</text>
+    <text x="400" y="320" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Mapping Physical</text>
+    <text x="400" y="350" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Network Systems</text>
+    <text x="400" y="380" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Precise Modeling</text>
+    
+    <!-- Stage 3: Open Digital Infrastructure -->
+    <rect x="520" y="200" width="180" height="200" rx="4" fill="#0077b6" />
+    <text x="610" y="230" font-family="Roboto, Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Open Digital Infrastructure</text>
+    <text x="610" y="260" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Promoting Open</text>
+    <text x="610" y="290" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Digital Public</text>
+    <text x="610" y="320" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Infrastructure</text>
+    <text x="610" y="350" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Cross-department</text>
+    <text x="610" y="380" font-family="Roboto, Arial" font-size="14" text-anchor="middle" fill="#ffffff">Data Interoperability</text>
+    
+    <!-- Connection Lines -->
+    <line x1="190" y1="180" x2="190" y2="200" stroke="#03045e" stroke-width="2" />
+    <line x1="400" y1="180" x2="400" y2="200" stroke="#03045e" stroke-width="2" />
+    <line x1="610" y1="180" x2="610" y2="200" stroke="#03045e" stroke-width="2" />
+    
+    <!-- Arrows -->
+    <polygon points="280,300 310,300 295,315" fill="#03045e" />
+    <polygon points="490,300 520,300 505,315" fill="#03045e" />
+    
+    <!-- Four Strategic Dimensions -->
+    <rect x="100" y="420" width="600" height="60" rx="4" fill="#023e8a" />
+    <text x="400" y="455" font-family="Roboto, Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Four Strategic Dimensions: Technology, Data Governance, Ecosystem, Applications</text>
+</svg>
